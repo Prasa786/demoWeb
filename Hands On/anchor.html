@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content Change</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #content {
+            margin-top: 20px;
+            padding: 20px;
+            border: 10px solid #ccc;
+            display: inline-block;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#" onclick="changeContent('One', 'This is the first section.')">One</a>
+    <a href="#" onclick="changeContent('Two', 'This is the second section.')">Two</a>
+    <a href="#" onclick="changeContent('Three', 'This is the third section.')">Three</a>
+    <a href="#" onclick="changeContent('Four', 'This is the fourth section.')">Four</a>
+
+    <div id="content">
+        <h2>One</h2>
+        <p>This is the first section.</p>
+    </div>
+
+    <script>
+        function changeContent(title, text) {
+            document.getElementById("content").innerHTML = "<h2>" + title + "</h2><p>" + text + "</p>";
+        }
+    </script>
+
+</body>
+</html>

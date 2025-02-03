@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" type="text/css">
+
+</head>
+<body>
+    <div class="contact">
+    <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+            <legend>Personel Information</legend>
+            <label for="firstName">First Name*: <br> </label>
+        <input type="text" name="firstName" id="firstName" placeholder="Enter First Name" required>
+        <p>
+            <label for="lastName">Last Name*: <br> </label>
+            <input type="text" name="lastName" id="lastName" placeholder="Enter last Name" required>
+        </p>
+        <p>
+                <label for="email">Email*: <br> </label>
+                <input type="email" name="email" id="email" placeholder="Enter Email" required>
+                <br>
+                <small style="opacity: 0.5;">Example:john123@gmail.com</small>
+        </p>
+
+        <p>
+            <label for="phone">Phone*: <br> </label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter Phone" required>   
+        </p>
+            
+        <div>
+            <label for="gender">Select Gender*:</label>
+            <input type="radio" name="gender" id="Male" value="Male" required>
+            <label for="Male">Male</label>
+
+            <input type="radio" name="gender" id="female" value="female" >
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <p>
+            <label for="dob" >Date of Birth:</label>
+            <input type="date" name="dob" id="dob"  placeholder="Enter Date of Birth" required>
+            </p>
+        </div>
+        </fieldset>
+
+   
+        
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+header{
+    background-color: #000000bc;
+    text-align: center;
+    color:beige;
+    padding:10px;
+}
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+nav{
+    background-color: #000000bc;
+    color: beige;
+    padding: 10px;
+    text-align: center;
+}
+nav a{
+    text-decoration: none;
+    font-size: 20px;
+    color: beige;
+    text-align: center;
+    margin:0 10px;
+}
+main{
+    display: flex;
+    margin:20px
+}
+section{
+    flex:2;
+    padding:20px;
+    background-color: rgba(250, 235, 215, 0.621);
+}
+section h2{
+    font-size:20px;
+    padding: 0 0 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+section h3{
+    background-color: #000000bc;
+    color: beige;
+    border-radius: 5px;;
+    padding: 5px;
+}
+aside{
+    flex:2;
+    padding:20px;
+    background-color: rosybrown;
+    font-size: 20px;
+}
+article{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.632);
+    color:azure;
+
+}
