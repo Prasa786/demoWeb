@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Learning</title>
+</head>
+<body>
+    <p id="dom"> nodeJS</p>
+    <a href="https://www.google.com" id="link">Google</a>
+    <button id="Link">Click Me</button>
+    <label for="name">Enter name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name">
+    <label for="color">Enter color name:</label>
+    <input type="text" id="color" name="color" placeholder="Enter your color">
+    <!-- <textareea id="text"placeholder="Enter your text"></textareea> -->
+    <script>
+    //     document.getElementById("dom").innerHTML;
+    //     document.getElementById("dom").style.color="red";
+    //     document.write();
+
+    //     // document.getElementById("dom").innerHTML="nodeJS";
+    //    document.getElementById("dom").style.fontStyle = "italic".button ==;
+
+        // for (let i = 0; i < 5; i++) {
+        //     document.write("Hello World");
+        // }
+        // document.getElementById("link").setAttribute("href", "https://www.youtube.com");
+
+        function sayHello(){
+            alert("have a great day")
+        }
+        function resume(){
+            alert("Click to download resume")
+        }
+        document.getElementById("Link").addEventListener("click", ()=>{sayHello(); resume();});
+        document.getElementById("name").onchange = function(){
+            alert("You entered your name in the fields  "+""+ document.getElementById("name").value.toUpperCase());
+        };
+        document.getElementById("color").onchange =function(){
+            document.getElementById("color").style.backgroundColor = document.getElementById("color").value;
+        }
+        let phno="/^\+91\d{10}$/";
+        document.write(/^\+91\d{10}$/.test(+911234567890));
+
+    </script>
+</body>
+</html>

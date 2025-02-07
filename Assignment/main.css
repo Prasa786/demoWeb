@@ -1,6 +1,6 @@
-/* Global Styles */
+
 * {
-   margin: 0;
+   margin: auto;
    padding: 0;
    box-sizing: border-box;
    font-family: 'Poppins', sans-serif;
@@ -14,11 +14,13 @@ body {
 
 nav {
    background-color: #4E2A05; 
-   padding: 15px;
+   padding: 10px;
    text-align: center;
    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
    position: fixed;
    width: 100%;
+   top: 135px;
+   z-index: 1;
 }
 
 nav a {
@@ -80,23 +82,27 @@ span{
 }
 
 .logo img {
-   width: 100%; /* Adjust width */
-   height: auto; /* Maintain aspect ratio */
-   display: block; /* Removes extra spacing */
+   position: fixed;
+   z-index: 2;
+   width: 100%; 
+   height: auto; 
+   display: block; 
 }
 
 
 .Home {
+   z-index: 3;
+   top: -500px;
    background-image: url('img1/tst.jpg');
    background-size: cover;
-   background-position: center;
+   background-position:50%;
    background-attachment: no-repeat;
    height: 100vh;
    display: grid;
    justify-content:left;
    align-items: center;
    text-align: center;
-   padding: 600px 20px 400px 200px; 
+   padding: 800px 20px 200px 100px; 
    color: #FAF3E0; 
    font-size: 2rem;
    font-weight: bold;

@@ -1,0 +1,106 @@
+* {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Heading styling: centers the h1 and sets its color */
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Labels that have a nested span (typically used for required asterisks) will have the span colored red */
+label span {
+    color: red;
+}
+
+/* Form container styling: restricts width, centers the form, and gives it a clean look */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fieldset styling: adds a border, spacing, and background color to group related fields */
+fieldset {
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #fafafa;
+}
+
+/* Legend styling: increases the font size and sets the color for better readability */
+legend {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Label styling: makes labels bold, ensures they display on a new line, and adds top margin */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Styling for inputs, textareas, and select elements: full width with padding, margin, and border */
+input, 
+textarea, 
+select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Small text styling: used for helper text or examples, set in gray */
+small {
+    color: gray;
+}
+
+/* Container for button elements: centers its contents */
+.buttons {
+    text-align: center;
+}
+
+/* Styling for inputs inside an element with class "buttons": sets padding, margin, removes borders, and rounds corners */
+.buttons input {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Specific styling for the submit button: green background, white text, and centering */
+input[type="submit"] {
+    background: #28a745;
+    color: white;
+    max-width: 1000px;
+    align-items: center;
+}
+
+input[type="reset"] {
+    background: #dc3545;
+    color: white;
+    max-width: 1000px;
+    align-items: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #859f04cd;
+    color: white;
+}

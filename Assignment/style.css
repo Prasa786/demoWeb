@@ -23,7 +23,7 @@ body {
   /* Fieldset */
   fieldset {
     border: none;
-    text-align: center;
+    text-align: left;
     padding: 10px;
   }
 

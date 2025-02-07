@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="form.css" type="text/css">
+</head>
+<body>
+    <h1>Registration</h1>
+    <form action="Assignment.html" method="get" id="registrationForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstName">First Name<span>*</span>:</label>
+            <input type="text" name="firstName" id="firstName" placeholder="Enter First Name">
+            <p>
+                <label for="lastName">Last Name<span>*</span>:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Enter Last Name">
+            </p>
+            <p>
+                <label for="email">Email<span>*</span>:</label>
+                <input type="email" name="email" id="email" placeholder="Enter Email">
+                <small style="opacity: 0.5;">Example: john123@gmail.com</small>
+            </p>
+            <p>
+                <label for="phone">Phone<span>*</span>:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Enter Phone">
+            </p>
+            <div>
+                <label>Select Gender<span>*</span>:</label>
+                <input type="radio" name="gender" id="Male" value="Male">
+                <label for="Male">Male</label>
+                <input type="radio" name="gender" id="Female" value="Female">
+                <label for="Female">Female</label>
+            </div>
+            <div>
+                <label for="dob">Date of Birth<span>*</span>:</label>
+                <input type="date" name="dob" id="dob" placeholder="Enter Date of Birth">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Employment Details</legend>
+            <label for="dept">Select Department<span>*</span>:</label>
+            <input type="text" name="dept" id="dept" list="content-list" placeholder="Select Department">
+            <datalist id="content-list">
+                <option value="HR">HR</option>
+                <option value="IT">IT</option>
+                <option value="Finance">Finance</option>
+                <option value="Marketing">Marketing</option>
+            </datalist>
+            <p>
+                <label for="experience">Years of Experience<span>*</span>:</label>
+                <input type="number" name="experience" id="experience" placeholder="Enter Experience" min="0">
+            </p>
+            <p>
+                <label>Enter the Skills:</label><br>
+                <input type="checkbox" name="skills" value="HTML" id="HTML"><label for="HTML">HTML</label>
+                <input type="checkbox" name="skills" value="CSS" id="CSS"><label for="CSS">CSS</label>
+                <input type="checkbox" name="skills" value="JavaScript" id="JavaScript"><label for="JavaScript">JavaScript</label>
+                <input type="checkbox" name="skills" value="SQL" id="SQL"><label for="SQL">SQL</label>
+            </p>
+            <p>
+                <label for="certifications">Certifications:</label><br>
+                <textarea name="certifications" id="certifications" placeholder="List the Certifications" cols="30" rows="5"></textarea>
+            </p>
+            <p>
+                <label for="file">Profile Picture:</label>
+                <input type="file" name="file" id="file" accept="image/*">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Address</legend>
+            <textarea name="address" id="address" placeholder="Enter Address" cols="30" rows="5"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Login Details</legend>
+            <label for="user">Username</label>
+            <input type="text" name="user" id="user" placeholder="Enter Username">
+            <p>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter Password">
+            </p>
+            <p>
+                <label for="confirm">Confirm Password</label>
+                <input type="password" name="confirm" id="confirm" placeholder="Confirm Password">
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+
+        <script src="form.js"></script>
+    </form>
+</body>
+</html>
